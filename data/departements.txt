@@ -1,0 +1,102 @@
+Numéro,Nom,Région,Superficie ,déc,Population
+1,Ain,Auvergne-Rhône-Alpes,5762,4,657856
+2,Aisne,Hauts-de-France,7361,7,529374
+3,Allier,Auvergne-Rhône-Alpes,7340,1,335628
+4,Alpes-de-Haute-Provence,Provence-Alpes-Côte d'Azur,6925,2,165451
+5,Hautes-Alpes,Provence-Alpes-Côte d'Azur,5548,7,140605
+6,Alpes-Maritimes,Provence-Alpes-Côte d'Azur,4298,6,1097410
+7,Ardèche,Auvergne-Rhône-Alpes,5528,6,329325
+8,Ardennes,Grand Est,5229,4,269701
+9,Ariège,Occitanie,4889,9,153954
+10,Aube,Grand Est,6004,2,311435
+11,Aude,Occitanie,6139,0,375217
+12,Aveyron,Occitanie,8735,1,279554
+13,Bouches-du-Rhône,Provence-Alpes-Côte d'Azur,5087,5,2048070
+14,Calvados,Normandie,5534,5,697547
+15,Cantal,Auvergne-Rhône-Alpes,5726,0,144379
+16,Charente,Nouvelle-Aquitaine,5956,0,351718
+17,Charente-Maritime,Nouvelle-Aquitaine,6863,8,655709
+18,Cher,Centre-Val de Loire,7235,0,300933
+19,Corrèze,Nouvelle-Aquitaine,5856,8,239190
+2A,Corse-du-Sud,Corse,4014,2,160814
+2B,Haute-Corse,Corse,4665,6,182887
+21,Côte-d'Or,Bourgogne-Franche-Comté,8763,2,535078
+22,Côtes-d'Armor,Bretagne,6877,6,603640
+23,Creuse,Nouvelle-Aquitaine,5565,4,115995
+24,Dordogne,Nouvelle-Aquitaine,9060,0,412807
+25,Doubs,Bourgogne-Franche-Comté,5232,6,545209
+26,Drôme,Auvergne-Rhône-Alpes,6530,0,517709
+27,Eure,Normandie,6039,9,599668
+28,Eure-et-Loir,Centre-Val de Loire,5880,0,431443
+29,Finistère,Bretagne,6733,0,917179
+30,Gard,Occitanie,5852,8,751457
+31,Haute-Garonne,Occitanie,6309,3,1415757
+32,Gers,Occitanie,6256,8,191819
+33,Gironde,Nouvelle-Aquitaine,9975,6,1636391
+34,Hérault,Occitanie,6101,0,1188973
+35,Ille-et-Vilaine,Bretagne,6774,7,1088855
+36,Indre,Centre-Val de Loire,6790,6,218707
+37,Indre-et-Loire,Centre-Val de Loire,6126,7,612119
+38,Isère,Auvergne-Rhône-Alpes,7431,5,1277513
+39,Jura,Bourgogne-Franche-Comté,4999,2,258798
+40,Landes,Nouvelle-Aquitaine,9242,6,418122
+41,Loir-et-Cher,Centre-Val de Loire,6343,4,329357
+42,Loire,Auvergne-Rhône-Alpes,4780,6,768508
+43,Haute-Loire,Auvergne-Rhône-Alpes,4977,1,227489
+44,Loire-Atlantique,Pays de la Loire,6874,4,1445171
+45,Loiret,Centre-Val de Loire,6775,2,682304
+46,Lot,Occitanie,5216,5,174670
+47,Lot-et-Garonne,Nouvelle-Aquitaine,5360,9,330844
+48,Lozère,Occitanie,5166,9,76633
+49,Maine-et-Loire,Pays de la Loire,7106,6,820713
+50,Manche,Normandie,5951,5,495093
+51,Marne,Grand Est,8169,1,566659
+52,Haute-Marne,Grand Est,6210,6,171798
+53,Mayenne,Pays de la Loire,5175,2,306538
+54,Meurthe-et-Moselle,Grand Est,5245,9,732590
+55,Meuse,Grand Est,6211,4,183001
+56,Morbihan,Bretagne,6822,6,764161
+57,Moselle,Grand Est,6216,3,1049155
+58,Nièvre,Bourgogne-Franche-Comté,6816,7,202670
+59,Nord,Hauts-de-France,5742,8,2607746
+60,Oise,Hauts-de-France,5860,2,829699
+61,Orne,Normandie,6103,4,278475
+62,Pas-de-Calais,Hauts-de-France,6671,4,1462167
+63,Puy-de-Dôme,Auvergne-Rhône-Alpes,7969,7,661852
+64,Pyrénées-Atlantiques,Nouvelle-Aquitaine,7644,8,687240
+65,Hautes-Pyrénées,Occitanie,4464,0,229788
+66,Pyrénées-Orientales,Occitanie,4116,0,482765
+67,Bas-Rhin,Grand Est,4755,0,1148073
+68,Haut-Rhin,Grand Est,3525,2,767842
+69,Rhône,Auvergne-Rhône-Alpes,3249,1,1883437
+70,Haute-Saône,Bourgogne-Franche-Comté,5360,1,234601
+71,Saône-et-Loire,Bourgogne-Franche-Comté,8574,7,551063
+72,Sarthe,Pays de la Loire,6206,0,566993
+73,Savoie,Auvergne-Rhône-Alpes,6028,3,439750
+74,Haute-Savoie,Auvergne-Rhône-Alpes,4387,8,835206
+75,Paris,Ile-de-France,105,4,2145906
+76,Seine-Maritime,Normandie,6277,6,1254739
+77,Seine-et-Marne,Ile-de-France,5915,3,1428636
+78,Yvelines,Ile-de-France,2284,4,1449723
+79,Deux-Sèvres,Nouvelle-Aquitaine,5999,4,374481
+80,Somme,Hauts-de-France,6170,1,568748
+81,Tarn,Occitanie,5757,9,391066
+82,Tarn-et-Garonne,Occitanie,3718,3,262316
+83,Var,Provence-Alpes-Côte d'Azur,5972,5,1085189
+84,Vaucluse,Provence-Alpes-Côte d'Azur,3567,3,561941
+85,Vendée,Pays de la Loire,6719,6,692705
+86,Vienne,Nouvelle-Aquitaine,6990,4,439332
+87,Haute-Vienne,Nouvelle-Aquitaine,5520,1,372123
+88,Vosges,Grand Est,5873,8,362397
+89,Yonne,Bourgogne-Franche-Comté,7427,4,334156
+90,Territoire de Belfort,Bourgogne-Franche-Comté,609,4,140120
+91,Essonne,Ile-de-France,1804,4,1306118
+92,Hauts-de-Seine,Ile-de-France,175,6,1626213
+93,Seine-Saint-Denis,Ile-de-France,236,2,1655422
+94,Val-de-Marne,Ile-de-France,245,0,1407972
+95,Val-d'Oise,Ile-de-France,1245,9,1251804
+971,Guadeloupe,Guadeloupe,1628,4,383559
+972,Martinique,Martinique,1128,0,361225
+973,Guyane,Guyane,83533,9,285133
+974,La Réunion,La Réunion,2503,7,863083
+976,Mayotte,Mayotte,376,0,256518
