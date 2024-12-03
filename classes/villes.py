@@ -61,3 +61,44 @@ class Villes:
                                 ( SELECT max(id) FROM Ville GROUP BY ville)''')
         except sqlite3.Error as error:
             print('Error while deleting duplicate data in Ville table', error)
+
+    def createTrigger(self,cursor):
+        try:
+            cursor.execute('''CREATE TRIGGER IF NOT EXISTS modify_pop_ville
+                        AFTER UPDATE OF population ON Ville BEGIN UPDATE Departement SET population = (
+                            SELECT sum(population) FROM Ville WHERE departement = numero
+                            ) WHERE numero = departement; END;''')
+        except sqlite3.Error as error:
+            print('Error while creating trigger', error)
+
+
+    # Change the Ville
+    def changeTableVilleToVilles(self, cursor, newTableName):
+        try:
+            query = f"ALTER TABLE Ville RENAME TO {newTableName}"
+            cursor.execute(query)
+            print(f"Table renamed to {newTableName}")
+        except sqlite3.Error as error:
+            print("Error while changing table name:", error)
+
+    # Change the population column name
+    def changePopulationColumnName(self, cursor, newColumnName):
+        try:
+            query = f"ALTER TABLE Villes RENAME COLUMN population TO {newColumnName}"
+            cursor.execute(query)
+            print(f"Column name changed to {newColumnName}")
+        except sqlite3.Error as error:
+            print('Error while changing column name', error)
+
+    def getDataFromPasDeCalais(self, cursor):
+        try:
+            cursor.execute('SELECT * FROM Ville WHERE departement = 62')
+            return cursor.fetchall()
+        except sqlite3.Error as error:
+            print('Error while fetching data from Ville table by departement', error)
+
+    def createIndexByDepartement(self, cursor):
+        try:
+            cursor.execute('CREATE INDEX IF NOT EXISTS idx_departement ON Ville(departement)')
+        except sqlite3.Error as error:
+            print('Error while creating index', error)

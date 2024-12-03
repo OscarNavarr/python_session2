@@ -42,9 +42,26 @@ def create_database():
             )
         ''')
 
+        cursor.executescript('''
+            CREATE TABLE IF NOT EXISTS newVille (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                departement INTEGER NOT NULL,
+                ville TEXT,
+                code_postal INTEGER,
+                population INTEGER,
+                superficie INTEGER
+            );
+
+            INSERT INTO newVille (departement, ville, code_postal, population, superficie)
+            SELECT departement, ville, code_postal, population, superficie FROM Ville;
+        ''')
+
+        # Use vacuum to clean up the database
+        cursor.execute('VACUUM')
+
+
         # Commit changes
         connection.commit()
-        print("Database and tables created successfully.")
 
     except sqlite3.Error as error:
         print("Error while creating the database:", error)
