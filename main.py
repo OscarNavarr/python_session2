@@ -72,17 +72,35 @@ def main():
     class_hautdeFrance.deleteTableHautDeFrance(cursor)
 
     # Take the time to execute the query getDataFromPasDeCalais()
-    initial_time = np.datetime64('now')
-    result_calais = class_ville.getDataFromPasDeCalais(cursor)
-    print(result_calais)
-    final_time = np.datetime64('now')
+        #initial_time = np.datetime64('now')
+        #result_calais = class_ville.getDataFromPasDeCalais(cursor)
+        #print(result_calais)
+        #final_time = np.datetime64('now')
 
     # Create Index in Ville by departement
-    class_ville.createIndexByDepartement(cursor)
-    print("Time to execute the query getDataFromPasDeCalais():", final_time - initial_time)
+        #class_ville.createIndexByDepartement(cursor)
+        #print("Time to execute the query getDataFromPasDeCalais():", final_time - initial_time)
 
     # Create a view
-    class_newView.create_view_hauts_de_france(cursor)
+        #class_newView.create_view_hauts_de_france(cursor)
+
+    # Get the villes that contain the word 'Seine'
+        #villes_with_seine = class_ville.showVillesThatHaveAWords(cursor, "Seine")
+        #print(villes_with_seine)
+
+    # Get villes that dep name is equal to four letters
+        #villes_with_dep_name_equal_to_four_letters = class_ville.getVilleByHisDepNameIgualToFourLetters(cursor)
+        #print(villes_with_dep_name_equal_to_four_letters)
+
+    # Get departements with length equal to 3
+        #dep_with_length_equal_to_3 = class_departement.getDepWithLengthIgualTo3(cursor)
+        #print(dep_with_length_equal_to_3)
+
+    # Create Date column in Ville table
+        #class_ville.createDateColumn(cursor)
+
+
+
     connection.close()
 if __name__ == '__main__':
     main()

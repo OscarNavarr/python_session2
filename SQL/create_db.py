@@ -49,12 +49,21 @@ def create_database():
                 ville TEXT,
                 code_postal INTEGER,
                 population INTEGER,
-                superficie INTEGER
+                superficie FLOAT
             );
 
             INSERT INTO newVille (departement, ville, code_postal, population, superficie)
-            SELECT departement, ville, code_postal, population, superficie FROM Ville;
+            SELECT departement, ville, code_postal, hab, superficie FROM Villes;
         ''')
+
+        cursor.execute(''' 
+            CREATE TABLE IF NOT EXISTS MODIFICATIONS (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                date DATE,
+                table_name TEXT
+                );
+        ''')
+
 
         # Use vacuum to clean up the database
         cursor.execute('VACUUM')

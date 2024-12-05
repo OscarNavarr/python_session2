@@ -42,3 +42,10 @@ class Departements:
             cursor.execute('''UPDATE Departement SET population = (SELECT sum(population) FROM Ville WHERE departement = numero) ''')
         except sqlite3.Error as error:
             print('Error while updating data in Departement table', error)
+
+    def getDepWithLengthIgualTo3(self, cursor):
+        try:
+            cursor.execute('SELECT numero FROM Departement WHERE length(numero) = 3')
+            return cursor.fetchall()
+        except sqlite3.Error as error:
+            print('Error while fetching data from Departement table', error)

@@ -102,3 +102,23 @@ class Villes:
             cursor.execute('CREATE INDEX IF NOT EXISTS idx_departement ON Ville(departement)')
         except sqlite3.Error as error:
             print('Error while creating index', error)
+
+    def showVillesThatHaveAWords(self, cursor, word):
+        try:
+            cursor.execute('SELECT * FROM Villes WHERE ville LIKE ?', (f'%{word}%',))
+            return cursor.fetchall()
+        except sqlite3.Error as error:
+            print('Error while fetching data from Ville table by word', error)
+
+    def getVilleByHisDepNameIgualToFourLetters(self, cursor):
+        try:
+            cursor.execute('SELECT * FROM Villes WHERE length(ville) = 4')
+            return cursor.fetchall()
+        except sqlite3.Error as error:
+            print('Error while fetching data from Ville table by word', error)
+
+    def createDateColumn(self, cursor):
+        try:
+            cursor.execute('ALTER TABLE Villes ADD COLUMN date TEXT DEFAULT "2012-01-01" ')
+        except sqlite3.Error as error:
+            print('Error while creating date column', error)
